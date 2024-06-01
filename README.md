@@ -1,6 +1,14 @@
 # Project Overview
 
-Our project is a blog site. The site's programming is done with JavaScript, the interface is designed with React, and database operations are handled with Firebase. The project includes features such as UI design, Object-Oriented Programming, Object-Relational Mapping, Web Service connection, Role-Based Access, and User authentication. Users on the site are divided into three categories: authors, readers, and admins. Authors can add text content to the site and delete the content they have added. Admins have authority over all content. Readers can only read the published content.
+Our project is a blog platform. Initially, when a user visits the site, they are presented with a registration page. If they do not have an account, they can fill out the required information to create one and be redirected to the appropriate page based on their selected role. If they already have an account, they can go to the login page and enter their email and password to be directed to the appropriate page according to their role.
+
+There are three different user roles in the project, and upon registration, the role is determined from the provided information. When logging in, users are redirected accordingly.
+
+Users with the Writer role can create and share new blog posts, edit or delete their previous posts, and update their profiles. Users with the Reader role can select a blog category and read blogs within that category. They can also like or unlike posts and update their profiles. The Admin role is pre-registered and does not require a typical sign-up process.
+
+Upon accessing the admin page, the admin is presented with three different charts related to blogs, users, and their interactions. The admin can view users with Reader and Writer roles in separate tables, along with their details. The admin can edit user information and delete users. If a user is deleted, their blogs are also deleted, and any likes they had given are adjusted accordingly. Additionally, users with Reader and Writer roles can switch roles from their main pages. These role changes are updated in Firebase so that the next time they log in, they are correctly redirected to the appropriate page.
+
+This is a brief summary of our project.
 
 ## Steps to Work with GitHub Codespaces
 
