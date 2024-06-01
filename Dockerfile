@@ -1,24 +1,26 @@
-# Base image olarak node kullan
+# Base image
 FROM node:14-alpine
 
-# Çalışma dizinini ayarla
+# Working directory
 WORKDIR /app
 
-# package.json ve package-lock.json dosyalarını kopyala
+# Copy package.json and package-lock.json
 COPY package*.json ./
 
-# Bağımlılıkları yükle
+# Install dependencies
 RUN npm install
 
-# Uygulama kodunu kopyala
+# Copy the rest of the application code
 COPY . .
 
-# Uygulamayı derle
+# Build the React application
 RUN npm run build
 
-# Uygulamayı sun
+# Install a simple web server for serving static files
 RUN npm install -g serve
-CMD ["serve", "-s", "build"]
 
-# Uygulamanın çalışacağı port
-EXPOSE 5000
+# Expose the port the app runs on
+EXPOSE 3000
+
+# Start the application
+CMD ["serve", "-s", "build", "-l", "3000"]
