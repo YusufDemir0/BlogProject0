@@ -10,22 +10,44 @@ Upon accessing the admin page, the admin is presented with three different chart
 
 This is a brief summary of our project.
 
+## Steps to Work with Docker
+
+To run the project using Docker, follow these steps:
+
+### **Install Docker:**
+   - Ensure you have Docker installed on your system. You can download and install Docker from [here](https://www.docker.com/get-started).
+
+### **Clone the Repository:**
+   - Open your terminal and run the following commands to clone the repository and navigate to the project directory:
+     ```bash
+     git clone https://github.com/YusufDemir0/BlogProject0
+     cd BlogProject0
+     ```
+
+### **Start the Project with Docker Compose:**
+   - Run the following command to start the project using Docker Compose:
+     ```bash
+     docker-compose up
+     ```
+   - This will build the Docker images and start the containers. The application will be accessible at `http://localhost:3000`.
+
 ## Steps to Work with GitHub Codespaces
 
-### Open Your Project in Codespaces:
+### **Open Your Project in Codespaces:**
 
-Go to your project repository on GitHub.com.
-Click the "Code" button on the repository's main page.
-In the dropdown menu, select "Open with Codespaces."
-Create a new Codespace or open an existing one.
+- Go to your project repository on GitHub.com.
+- Click the "Code" button on the repository's main page.
+- In the dropdown menu, select "Open with Codespaces."
+- Create a new Codespace or open an existing one.
 
-### Use the Development Environment:
+### **Use the Development Environment:**
 
-Once the Codespace is open, you'll see a fully-featured Visual Studio Code environment.
-Open the terminal by pressing Ctrl + or by selecting Terminal > New Terminal from the menu.
-Run the following commands to install dependencies and start your project:
-npm install
-npm start
+- Once the Codespace is open, you'll see a fully-featured Visual Studio Code environment.
+- Open the terminal by pressing `Ctrl +` or by selecting `Terminal > New Terminal` from the menu.
+- Run the following commands to install dependencies and start your project:
+   ```bash
+   npm install
+   npm start
 These commands will start the project and allow you to test it in the browser.
 
 ## Usage
@@ -88,9 +110,11 @@ After logging in, you will be directed to different homepages depending on your 
     - **Username:** admin@gmail.com
     - **Password:** 123123
 
+
 By following these steps, you can efficiently use and manage the project. If you encounter any issues or need more information, please refer to the project documentation.
 
 ## Creators
--Egemen Çakır  200201052
--Halil Asav  210201097
--Yusuf Demir  210201009
+
+- Egemen Çakır  200201052
+- Halil Asav  210201097
+- Yusuf Demir  210201009
